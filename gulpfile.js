@@ -21,7 +21,7 @@ gulp.task('browser', function() {
 });
 
 gulp.task('clean', function () {
-  return gulp.src('./app/css', {read: false})
+  return gulp.src('./app/css/style', {read: false})
       .pipe(clean());
 });
 
@@ -59,7 +59,7 @@ gulp.task('sass', function () {
       basename:"allstyle",
         suffix: '.min'
       }))
-    .pipe(gulp.dest('./app/css'));
+    .pipe(gulp.dest('./app/css/style'));
     
 });
 
@@ -70,7 +70,7 @@ gulp.task('minCss', gulp.series('clean', 'sass'))
 gulp.task('watch', function(){
    gulp.watch('./app/scss/custom/*.scss', gulp.series('minCss'));
    gulp.watch("app/*.html").on('change', browserSync.reload);
-   gulp.watch("app/css/*.css").on('change', browserSync.reload);
+   gulp.watch("app/css/style/*.css").on('change', browserSync.reload);
 
 })
 
@@ -82,7 +82,7 @@ gulp.task('minCss', gulp.series('clean','sass'))
 gulp.task('watch', function(){
   gulp.watch('./app/scss/custom/*.scss', gulp.series('minCss'));
   gulp.watch("app/*.html").on('change', browserSync.reload);
-  gulp.watch("app/css/*.css").on('change', browserSync.reload);
+  gulp.watch("app/css/style/*.css").on('change', browserSync.reload);
 
 })
 
