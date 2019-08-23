@@ -21,7 +21,7 @@ gulp.task('browser', function() {
 });
 
 gulp.task('clean', function () {
-  return gulp.src('./app/css', {read: false})
+  return gulp.src('./app/css/', {read: false})
       .pipe(clean());
 });
 
@@ -59,7 +59,7 @@ gulp.task('sass', function () {
       basename:"allstyle",
         suffix: '.min'
       }))
-    .pipe(gulp.dest('./app/css'));
+    .pipe(gulp.dest('./app/css/'));
     
 });
 
