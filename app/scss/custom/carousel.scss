@@ -1,0 +1,26 @@
+@import"../_variables";
+@import"../_mixins";
+@import"../_reset";
+.carousel{
+    &-item{
+        position: relative;
+        background-color: $white;
+        height: 220px;
+        padding-top:20px;
+        text-align: center;
+        
+        h3{
+            color:$active-color;
+        }
+        img{
+            position: absolute;
+            bottom:0;
+        }
+    }
+    .slick-slide{
+        margin: 0 15px;
+        &:first-child{
+            margin-left: 0;
+        }
+    }
+}
