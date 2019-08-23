@@ -8,4 +8,26 @@ body{
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: 400;
+    .bold{
+        font-weight:700;
+    }
+    .blue-text{
+        text-transform: uppercase;
+        color: $active-color;
+    }
+    .btn{
+        display:inline-block;
+        padding:15px 32px;
+        border-radius:5px;
+        color:$white;
+        font-size:16px;
+        font-weight:700;
+        &-primary{
+            background-color: $active-color;
+            border-bottom: 5px solid darken($active-color, 10%);
+            &:hover{
+                background-color:lighten($active-color, 2%)
+            }
+        }
+    }
 }
