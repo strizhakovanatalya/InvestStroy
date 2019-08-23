@@ -1,0 +1,20 @@
+@import"../_variables";
+@import"../_mixins";
+@import"../_reset";
+.content{
+    margin-bottom: 70px;
+    .title{
+        font-size:24px;
+        line-height: 33px;
+        font-weight: 700;
+        margin-bottom: 30px;
+    }
+    p{
+        margin-bottom: 20px;
+        color:$default-text-color;
+        line-height: 20px;
+        &:last-of-type{
+            margin-bottom: 40px;
+        }
+    }
+}
