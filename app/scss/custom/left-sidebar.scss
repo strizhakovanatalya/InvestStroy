@@ -2,7 +2,9 @@
 @import"../_mixins";
 @import"../_reset";
 .left-sidebar{
-    
+    &-btn{
+        display:none;
+    }
     &-menu{
         background-color: $white;
         padding:10px 0;

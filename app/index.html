@@ -21,10 +21,13 @@
     <div class="container">
         <div class="top-nav">
             <div class="row justify-content-between align-items-center">
-                <div class="col-md-auto">
+                <div class="col-md-auto d-flex justify-content-between align-items-center">
                     <div class="logo">
                         <img src="img/logo.png" alt="СтройИнвест">
                     </div>
+                    <button class="top-nav-btn">
+                        <i class="fas fa-bars"></i>
+                    </button>
                 </div>
                 <!-- /.col-md -->
                 <div class="col-md-auto">
@@ -45,6 +48,11 @@
         <div class="row">
             <div class="col-md-4">
                 <div class="left-sidebar">
+                    <div class="left-sidebar-btn">
+                        <span>Категории</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <!-- /.left-sidebar-btn -->
                     <ul class="left-sidebar-menu">
                         <li><a href="#">Земля</a></li>
                         <li><a href="#">Жилая недвижимость</a></li>
@@ -130,7 +138,7 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-xl-4 col-lg-4 col-md-4">
                     <div class="copy">
                         <p>Copyright © 2014-2017</p>
                         <a href="#" class="policy">Политика конфиденциальности</a>
@@ -138,7 +146,7 @@
                     </div>
                 </div>
                 <!-- /.col-md -->
-                <div class="col-md-2">
+                <div class="col-xl-2 col-lg-2 col-md-2 col-6">
                     <ul class="footer-menu">
                         <li><a href="#">Главная</a></li>
                         <li><a href="#">О компании</a></li>
@@ -149,7 +157,7 @@
                     </ul>
                 </div>
                 <!-- /.col-md -->
-                <div class="col-md">
+                <div class="col-xl col-lg-2 col-md-2 col-6">
                     <ul class="footer-menu">
                         <li><a href="#">Земля</a></li>
                         <li><a href="#">Жилая недвижимость</a></li>
@@ -161,7 +169,7 @@
                     </ul>
                 </div>
                 <!-- /.col-md -->
-                <div class="col-md">
+                <div class="col-xl col-lg-4 col-md-4">
                     <div class="footer-contacts">
                         <a href="tel:+8(800)8505050" class="blue-text">8 (800) 850-50-50</a>
                         <p class="address">г. Москва, ул. Морозова, д.12, 3 этаж</p>
@@ -186,17 +194,48 @@
     </footer>
     <!-- /.footer -->
     <!-- Bootstrap core JavaScript -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
-    <script>window.jQuery || document.write(`<script src="js/jquery-3.4.1.slim.min.js"><\/script>`)</script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script>window.jQuery || document.write(`<script src="js/jquery-3.4.1.min.js"><\/script>`)</script>
     <script src="slick/slick.js"></script>
     <script>
     $('.carousel-items').slick({
         arrows: false,
         dots:true,
         slidesToShow: 4,
-        slidesToScroll: 1
-
+        slidesToScroll: 1,
+        responsive:[{
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 992,
+            settings: {
+            slidesToShow: 2,
+            slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 767,
+            settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1
+            }
+        }
+        ]
     });
+    </script>
+    <script>
+        $( document ).ready(function(){
+            $( ".top-nav-btn" ).click(function(){ 
+                $( ".top-nav-menu" ).toggleClass("top-nav-menu__active"); 
+            });
+            $( ".left-sidebar-btn" ).click(function(){ 
+                $( ".left-sidebar-menu" ).toggleClass("left-sidebar-menu__active"); 
+            });
+        });
     </script>
 </body>
 </html>
