@@ -1,0 +1,23 @@
+@import"../_variables";
+@import"../_mixins";
+@import"../_reset";
+.team{
+    text-align: center;
+    color:$default-text-color;
+    margin-bottom: 75px;
+    .title{
+        color:$dark;
+        text-align: left;
+    }
+    img{
+        margin-bottom: 25px;;
+    }
+    h4{
+        font-size: 18px;
+        line-height: 30px;
+    }
+    p{
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+}
