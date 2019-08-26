@@ -1,0 +1,134 @@
+@import"../_variables";
+@import"../_mixins";
+@import"../_reset";
+@media(max-width:1200px){
+    .top-nav{
+        &-menu{
+            li{
+                margin-right: 30px;
+            }
+        }
+    }
+}
+@media(max-width:1024px){
+    .top-nav{
+        &-menu{
+            li{
+                margin-right: 20px;
+            }
+        }
+    }
+}
+@media(max-width:992px){
+    .top-nav{
+        &-menu{
+            li{
+                margin-right: 12px;
+                a{
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+@media(max-width:767px){
+    .top-nav{
+        margin-bottom: 2.5rem;
+        &-btn{
+            display:block;
+            width:30px;
+            height:30px;
+            background-color: transparent;
+            font-size: 20px;
+        }
+        &-menu{
+            display:none;
+            flex-direction: column;
+            align-items: flex-end;
+            li{
+                margin-right: 0;
+                line-height: 2.7;
+                a{
+                    &::after{
+                        display: none;
+                    }
+                }
+            }
+            &__active{
+                display:flex;
+            }
+        }
+    }
+    .left-sidebar{
+        &-btn{
+            display: flex;
+            justify-content: space-between;
+            padding:15px;
+            background-color: $white;
+            font-size: 16px;
+            margin-bottom: 2.5rem;
+        }
+        &-menu{
+            display:none;
+            &__active{
+                display:block;
+                margin-bottom: 4rem;
+            }
+        }
+        &-items{
+            display:none;
+        }
+    }
+    .content{
+        margin-bottom: 4rem;;
+        .title{
+            margin-bottom: 1.8rem;
+        }
+        p{
+            &:last-of-type{
+                margin-bottom: 2rem;
+            }
+        }
+        .btn{
+            display:block;
+            &-primary{
+                width:280px;
+                margin: auto;
+            }
+        }
+    }
+    .carousel{
+        .slick-slide{
+            &:first-child{
+                margin-left: 15px;
+            }
+        }
+    }
+    footer{
+        padding:40px 0;
+        .copy{
+            text-align: center;
+        }
+        small{
+            margin: 36px 0;
+            max-width: 100%;
+        }
+        .footer-contacts{
+            text-align: left;
+            margin-top:35px;
+            p:first-of-type{
+                margin-top: 0;
+            }
+        }
+        .footer-social-links{
+            text-align: left;
+            ul{
+                li{
+                    a{
+                        margin:0 20px 0 0;
+                    }
+                }
+            }
+        }
+    }
+}
