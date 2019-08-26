@@ -4,17 +4,10 @@
 @media(max-width:1200px){
     .top-nav{
         &-menu{
+            display: flex;
+            justify-content: space-around;
             li{
-                margin-right: 30px;
-            }
-        }
-    }
-}
-@media(max-width:1024px){
-    .top-nav{
-        &-menu{
-            li{
-                margin-right: 20px;
+                margin-right: 0;
             }
         }
     }
@@ -24,13 +17,16 @@
         &-menu{
             li{
                 margin-right: 12px;
+                &:last-child{
+                    margin-right: 0;
+                }
                 a{
                     font-size: 12px;
                 }
             }
         }
     }
-}
+} 
 @media(max-width:767px){
     .top-nav{
         margin-bottom: 2.5rem;
