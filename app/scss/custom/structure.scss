@@ -1,0 +1,39 @@
+@import"../_variables";
+@import"../_mixins";
+@import"../_reset";
+.content{
+    .structure{
+        .row-flex{
+            display: flex;
+            flex-wrap: wrap;
+            .col{
+                margin-bottom: 25px;
+                .structure-item{
+                    height: 100%;
+                    background-color: $white;
+                    padding:25px 30px;
+                    &:hover{
+                        box-shadow:0 5px 10px rgba(0, 0, 1, .1);
+                        transition: all .2s;
+                    }
+                    a{
+                        display: block;
+                        margin-bottom: 20px;
+                    }
+                    small{
+                        display: block;
+                        margin-bottom: 15px;
+                        color: $inn;
+                        line-height: 1.5;
+                    }
+                    p{
+                        line-height: 22px;
+                        &:last-of-type{
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
