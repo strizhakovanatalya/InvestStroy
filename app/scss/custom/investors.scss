@@ -1,0 +1,149 @@
+@import"../_variables";
+@import"../_mixins";
+@import"../_reset";
+.contracts{
+    li{
+        a{
+            color:$active-color;
+            text-decoration: underline;
+            line-height: 22px;
+            &:hover{
+            color:$active-color;
+            text-decoration: underline;
+            }
+        }
+    }
+}
+.calc{
+    margin-bottom: 40px;
+    .calc-programms{
+        display: flex;
+        flex-wrap: wrap;
+        .calc-radio{
+            flex-basis: 50%;
+            &:last-child{
+                flex-basis: 100%;
+                display: flex;
+            }
+            input[type="radio"]{
+                display: none;
+                &:checked{
+                    &+label::before{
+                        background-color: $active-color;
+                        border: 6px solid $white;
+                    }
+                }
+            }
+            label{
+                display: inline-block;
+                margin-bottom: 20px;
+                position: relative;
+                &:hover{
+                    cursor: pointer;
+                }
+                span{
+                    display: block;
+                    margin-left: 37px;
+                    small{
+                        display: block;
+                        font-size: 10px;
+                        color:rgba($dark, .5)
+                    }
+                }
+                &::before{
+                    content:'';
+                    display: inline-block;
+                    width:24px;
+                    height:24px;
+                    margin-right: 10px;
+                    position: absolute;
+                    top:-3px;
+                    box-shadow:0 5px 10px rgba(0, 0, 1, .1);
+                    background-color:$white;
+                    border: 6px solid $white;
+                    border-radius: 50%;
+                    transition: all .2s;
+                }
+            }
+            .calc-popular{
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                background-color: $active-color;
+                color:$white;
+                padding:0 8px;
+                font-size: 10px;
+                text-transform: uppercase;
+                margin-left: 16px;
+                height: 25px;
+                position: relative;
+                &::before{
+                    content:'';
+                    width:6px;
+                    height: 13px;
+                    border: 6px solid transparent;
+                    border-right: 6px solid $active-color;
+                    position: absolute;
+                    left:-12px;
+                    top:50%;
+                    margin-top: -6px;
+                }
+            }
+        }
+    }
+    &-legal{
+        font-size: 12px;
+        line-height: 18px;
+        margin: 15px 0 30px;
+    }
+    h4{
+        font-size: 22px;
+        line-height: 10px;
+        margin-bottom: 30px;
+    }
+    .range-quantity {
+        background-color: $active-color;
+    }
+    .range-handle{
+        width:23px;
+        height:23px;
+        top:-10px;
+        border: 6px solid rgba($dark, .9);
+    }
+    .range-bar{
+        background-color: rgba($dark, .1);
+        .range-min, .range-max{
+            display: none;
+        }
+    }
+    .calc-summ-invest{
+        &-label{
+            margin-right: 15px;
+        }
+        &-num{
+            display:inline-block;
+            padding:9px 27px;
+            background-color: $white;
+            font-size: 18px;
+            margin-top: 30px;
+        }
+    }
+    .calc-total, .calc-monthly{
+        display:inline-block;
+        padding:9px 27px;
+        background-color: $white;
+        font-size: 18px;
+        color:$active-color;
+        text-align: center;
+        line-height: 17px;
+        margin: 20px 20px 0 0;
+        small{
+            font-size: 10px;
+            color:$dark;
+        } 
+    }
+    .calc-monthly{
+        background-color: transparent;
+        margin-right: 0;
+    }
+}

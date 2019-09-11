@@ -12,7 +12,7 @@
         }
     }
 }
-@media(max-width:992px){
+@media(max-width:991px) and (min-width:768px){
     .top-nav{
         &-menu{
             li{
@@ -23,6 +23,27 @@
                 a{
                     font-size: 12px;
                 }
+            }
+        }
+    }
+    .calc{
+        .calc-programms{
+            .calc-radio{
+                .calc-popular{
+                    font-size: 8px;
+                    text-align: center;
+                }
+            }
+        }
+        h4{
+            line-height: 1;
+        }
+        .range-bar{
+            margin-bottom: 20px;
+        }
+        .calc-summ-invest{
+            &-num{
+                margin-top: 20px;
             }
         }
     }
