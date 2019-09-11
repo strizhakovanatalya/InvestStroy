@@ -14,6 +14,8 @@
     <!-- Slick slider aka carousel -->
     <link rel="stylesheet" href="slick/slick-theme.css">
     <link rel="stylesheet" href="slick/slick.css">
+    <!-- Powerange -->
+    <link rel="stylesheet" href="powerange/powerange.min.css">
     <!-- Custom styles for this template -->
     <link rel="stylesheet" href="css/allstyle.min.css">
 </head>
@@ -33,10 +35,10 @@
                 <div class="col-xl-auto col-lg-10 col-md-auto">
                     <ul class="top-nav-menu">
                         <li><a href="index.html">Главная</a></li>
-                        <li><a href="#">О компании</a></li>
+                        <li><a href="about.html">О компании</a></li>
                         <li><a href="#">Наши услуги</a></li>
                         <li><a href="structure.html">Структура</a></li>
-                        <li><a href="investors.html">Инвесторам</a></li>
+                        <li><a href="#">Инвесторам</a></li>
                         <li><a href="contacts.html">Контакты</a></li>
                     </ul>
                 </div>
@@ -90,37 +92,92 @@
             <!-- /.col-md-4 -->
             <div class="col-md-8">
                 <div class="content">
-                    <h2 class="title">О компании</h2>
+                    <h2 class="title">Инвесторам</h2>
                     <p>На портрете была изображена дама в меховой шляпе и боа, она сидела очень прямо и протягивала зрителю тяжелую меховую муфту, в которой целиком исчезала ее рука. Затем взгляд Грегора устремился в окно, и пасмурная погода – слышно было, как по жести подоконника стучат капли дождя – привела его и вовсе в грустное настроение.</p>
                     <p>«Хорошо бы еще немного поспать и забыть всю эту чепуху», – подумал он, но это было совершенно неосуществимо, он привык спать на правом боку, а в теперешнем своем состоянии он никак не мог принять этого положения.</p>
                     <p>С какой бы силой ни поворачивался он на правый бок, он неизменно сваливался опять на спину. Закрыв глаза, чтобы не видеть своих барахтающихся ног, он проделал это добрую сотню раз и отказался от этих попыток только тогда, когда почувствовал какую-то неведомую дотоле, тупую и слабую боль в боку. «Ах ты, господи, – подумал он, – какую я выбрал хлопотную профессию! </p>
+                    <ul class="contracts">
+                        <li><a href="#">Договор займа »</a></li>
+                        <li><a href="#">Договор погашения »</a></li>
+                        <li><a href="#">Договор залога »</a></li>
+                        <li><a href="#">Договор поручительства »</a></li>
+                    </ul>
                 </div>
                 <!-- /.content -->
-                <div class="team">
-                    <h2 class="title">Руководство СтройИнвест</h2>
+                <div class="calc">
                     <div class="row">
-                        <div class="col-md-4">
-                            <img src="img/team/petrov.png" alt="Петров Дмитрий">
-                            <h4>Петров Дмитрий</h4>
-                            <p>Руководитель компании</p>
+                        <div class="col-md-6">
+                            <div class="calc-programms">
+                                <div class="calc-radio">
+                                    <input type="radio" data-month="6" data-per="0.2" checked name="programms" id="first">
+                                    <label for="first">
+                                        <span>20% годовых<small>на 6 месяцев</small></span>
+                                    </label>
+                                </div>
+                                <!-- /.calc-radio -->
+                                <div class="calc-radio">
+                                    <input type="radio" data-month="12" data-per="0.24"name="programms" id="second">
+                                    <label for="second">
+                                        <span>24% годовых<small>на 1 год</small></span>
+                                    </label>
+                                </div>
+                                <!-- /.calc-radio -->
+                                <div class="calc-radio">
+                                    <input type="radio"  data-month="24" data-per="0.26" name="programms" id="third">
+                                    <label for="third">
+                                        <span>26% годовых<small>на 2 года</small></span>
+                                    </label>
+                                </div>
+                                <!-- /.calc-radio -->
+                                <div class="calc-radio">
+                                    <input type="radio" data-month="36" data-per="0.28" name="programms" id="fourth">
+                                    <label for="fourth">
+                                        <span>28% годовых<small>на 3 года</small></span>
+                                    </label>
+                                </div>
+                                <!-- /.calc-radio -->
+                                <div class="calc-radio">
+                                    <input type="radio" data-month="48" data-per="0.32" name="programms" id="fifth">
+                                    <label for="fifth">
+                                        <span>32% годовых<small>на 4 года</small></span>
+                                    </label>
+                                    <div class="calc-popular">
+                                        популярная программа
+                                    </div>
+                                </div>
+                                <!-- /.calc-radio -->
+                            </div>
+                            <!-- /.calc-programs -->
+                            <div class="calc-legal">
+                                *Наша компания является налоговым агентом, удерживает и оплачивает НДФЛ Вся информация, размещенная на сайте, несет исключительно рекламный характер и не является публичной офертой.
+                            </div>
+                            <!-- /.calc-legal -->
                         </div>
-                        <!-- /.col-md-4 -->
-                        <div class="col-md-4">
-                            <img src="img/team/ivanov.png" alt="Иванов Василий">
-                            <h4>Иванов Василий</h4>
-                            <p>Директор, руководитель Департамента по работе с недвижимостью</p>
+                        <!-- /.col-md-6 -->
+                        <div class="col-md-6">
+                            <h4>Укажите сумму инвестиций</h4>
+                            <input type="text" class="calc-range" name="summ">
+                            <div class="calc-summ-invest">
+                                <span class="calc-summ-invest-label">Сумма:</span>
+                                <span class="calc-summ-invest-num"><span>700 000</span> руб.</span>
+                            </div>
+                            <!-- /.calc-summ-invest -->
+                            <div>
+                                <span class="calc-total">
+                                    <large><span id="total">770 000</span> руб.</large><br>
+                                    <small>Сумма через <span id="month">6</span> месяцев</small>
+                                </span>
+                                <span class="calc-monthly">
+                                    <large><span>32 000</span> руб.</large><br>
+                                    <small>Ежемесячный доход</small>
+                                </span>
+                            </div>
                         </div>
-                        <!-- /.col-md-4 -->
-                        <div class="col-md-4">
-                            <img src="img/team/vasilkova.png" alt="Василькова Анна">
-                            <h4>Василькова Анна</h4>
-                            <p>Руководитель Департамента по работе с клиентами</p>
-                        </div>
-                        <!-- /.col-md-4 -->
+                        <!-- /.col-md-6 -->
                     </div>
                     <!-- /.row -->
                 </div>
-                <!-- /.team -->
+                <!-- /.calc -->
                 <div class="carousel">
                     <h2 class="title">Направления деятельности</h2>
                     <div class="carousel-items">
@@ -173,7 +230,7 @@
                 <div class="col-xl-2 col-lg-2 col-md-2 col-6">
                     <ul class="footer-menu">
                         <li><a href="index.html">Главная</a></li>
-                        <li><a href="#">О компании</a></li>
+                        <li><a href="about.html">О компании</a></li>
                         <li><a href="#">Наши услуги</a></li>
                         <li><a href="structure.html">Структура</a></li>
                         <li><a href="#">Инвесторам</a></li>
@@ -221,6 +278,7 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script>window.jQuery || document.write(`<script src="js/jquery-3.4.1.min.js"><\/script>`)</script>
     <script src="slick/slick.js"></script>
+    <script src="powerange/powerange.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
