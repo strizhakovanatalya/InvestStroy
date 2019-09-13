@@ -26,6 +26,16 @@
             }
         }
     }
+    .content{
+        .object-page{
+            &-gallery{
+                float:none;
+                img{
+                    margin:0 auto 30px;
+                }
+            }
+        }
+    }
     .calc{
         .calc-programms{
             .calc-radio{
@@ -111,6 +121,14 @@
             &-primary{
                 width:280px;
                 margin: auto;
+            }
+        }
+        .object-page{
+            &-gallery{
+                float:none;
+                img{
+                    margin: 0 auto 30px;
+                }
             }
         }
     }
