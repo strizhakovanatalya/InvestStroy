@@ -1,0 +1,41 @@
+@import"../_variables";
+@import"../_mixins";
+@import"../_reset";
+.content{
+    .category-card{
+        // max-width: 370px;
+        // height: 500px;
+        background-color: $white;
+        margin-bottom: 30px;
+        img{
+            vertical-align: bottom;
+            width: 100%;
+        }
+        &-text{
+            padding:30px;
+            .category-card-title{
+                color:$active-color;
+                display: block;
+                font-size: 16px;
+                margin-bottom: 25px;
+            }
+            .category-card-price{
+                color:$active-color;
+                display: block;
+                font-size: 20px;
+                font-weight:700;
+                margin-bottom: 25px;
+                text-align: center;
+            }
+            .category-btn{
+                width:100%;
+                margin-bottom: 20px;
+            }
+            .category-card-more{
+                display: block;
+                text-align: center;
+                text-decoration: underline;
+            }
+        }
+    }
+}
