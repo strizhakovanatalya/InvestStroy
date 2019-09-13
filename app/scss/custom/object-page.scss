@@ -1,0 +1,18 @@
+@import"../_variables";
+@import"../_mixins";
+@import"../_reset";
+.content{
+    .object-page{
+        &-gallery{
+            float:right;
+            img{
+                margin: 0 0 20px 30px;
+            }
+        }
+        &-text{
+            &-link{
+                color:$active-color;
+            }
+        }
+    }
+}
