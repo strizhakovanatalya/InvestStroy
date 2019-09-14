@@ -1,0 +1,65 @@
+@import"../_variables";
+@import"../_mixins";
+@import"../_reset";
+.modal{
+    display: none;
+    background-color: rgba(0, 0, 0, .4);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width:100%;
+    height: 100%;
+    &-content{
+        position: relative;
+        background-color: $white;
+        padding: 40px 50px;
+        width:100%;
+        max-width: 370px;
+        margin: 50px auto;
+        text-align: center;
+        box-shadow: 0 12px 24px rgba(0, 0 , 1, .18);
+        .close{
+            position: absolute;
+            right:0;
+            top:0;
+            padding:15px;
+            font-size: 20px;
+            line-height: 1;
+            opacity: .5;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+        h4{
+            font-size: 18px;
+            color:$active-color;
+            margin-bottom: 15px;
+        }
+        p{
+            font-size: 12px;
+            margin-bottom: 30px;
+        }
+        .modal-form{
+            input{
+                display: block;
+                width:100%;
+                border: 1px solid rgba($dark, .15);
+                border-radius: 4px;
+                padding:10px 20px;
+                font-size: 15px;
+                margin-bottom: 10px;
+            }
+            button{
+                display: block;
+                width: 100%;
+                cursor: pointer;
+                margin-bottom: 20px;
+            }
+            small{
+                a{
+                    color:$active-color;
+                }
+            }
+        }
+    }
+}
